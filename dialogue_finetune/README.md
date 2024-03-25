@@ -1,4 +1,4 @@
-# Pre-training
+# Fine-tuning
 
 ## Data Preparation
 Download the original versions of the datasets separately from [Ubuntu Corpus V1](https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip) and [E-Commerce Corpus](https://github.com/cooelf/DeepUtteranceAggregation). Then, run the following example script to perform data preprocessing.
@@ -30,7 +30,7 @@ nohup python -m torch.distributed.launch --nproc_per_node 8 --nnodes=1 --master_
 --batch_size 64 \
 >log/$name/$resFile.log 2>&1 &
 ```
-## Post-training Examples
+## Fine-tuning Examples
 You can also run the following script to fine-tune separately on Ubuntu and Ecommerce.
 
 ```
