@@ -31,7 +31,7 @@ nohup python -m torch.distributed.launch --nproc_per_node 8 --nnodes=1 --master_
 >log/$name/$resFile.log 2>&1 &
 ```
 ## Post-training Examples
-You can also run the following script to post-train separately on Ubuntu and Ecommerce.
+You can also run the following script to fine-tune separately on Ubuntu and Ecommerce.
 
 ```
 bash finetune_ubuntu.sh
