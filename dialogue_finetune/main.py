@@ -26,15 +26,6 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 sys.path.append("./")
 
-response_number={
-    "ubuntu_val":10,
-    "ubuntu_test":10,
-    "douban_val":2,
-    "douban_test":10,
-    "ecommerce_val":2,
-    "ecommerce_test":10,
-}
-
 def parser_args():
     parser = argparse.ArgumentParser(description='train parameters')
     parser.add_argument('--train_path', default='ubuntu/train/data.json', type=str)
