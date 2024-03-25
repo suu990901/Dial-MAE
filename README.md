@@ -13,8 +13,8 @@ pip install transformers==4.17.0 datasets nltk tensorboard pandas tabulate
 ```
 ## Training
 Please refer to examples below for reproducing our works.
-1. Post-training
-2. Fine-tuning
+1. [Post-training](https://github.com/suu990901/Dial-MAE/tree/main/dialogue_post_train)
+2. [Fine-tuning](https://github.com/suu990901/Dial-MAE/tree/main/dialogue_finetune)
 
 ## Citation
 If you find our work useful, please consider to cite our paper.
