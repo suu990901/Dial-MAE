@@ -1,4 +1,4 @@
-# Pre-training
+# Post-training
 
 ## Data Preparation
 Download the original versions of the datasets separately from [Ubuntu Corpus V1](https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip) and [E-Commerce Corpus](https://github.com/cooelf/DeepUtteranceAggregation). Then, run the following example script to perform data preprocessing.
