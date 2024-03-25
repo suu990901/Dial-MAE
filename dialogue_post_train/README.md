@@ -7,7 +7,7 @@ Download the original versions of the datasets separately from [Ubuntu Corpus V1
 bash make_post_train_data.sh
 ```
 
-## Pre-training
+## Post-training
 
 The code below will launch post-training on 8 GPUs and train Dial-MAE with warm start from bert-base-uncased using the Ubuntu Corpus.
 
