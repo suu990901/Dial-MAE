@@ -89,8 +89,7 @@ def eval_data(model,eval_loader,args,mode="test"):
                     np.array(scores.cpu().tolist()), 
                     np.array(label.cpu().tolist()),
                     2)
-        # some douban data have not true labels
-        if sum(rank_by_pred[0])==0 and args.dataset == "douban":
+        if sum(rank_by_pred[0])==0:
             continue
         num_correct = logits_recall_at_k(pos_index, args.k_list)
         total_mrr += logits_mrr(pos_index)
@@ -101,14 +100,6 @@ def eval_data(model,eval_loader,args,mode="test"):
     # total_examples=all_scores.shape[0]
     avg_mrr = float(total_mrr / total_examples)
     
-    if args.dataset == "douban" and mode=='test':
-        p_1 = float(total_prec_at_one / total_examples)
-        map = float(total_map / total_examples)
-        R10_1 = round(((total_correct[0]/total_examples)*100), 2)
-        R10_2 = round(((total_correct[1]/total_examples)*100), 2)
-        R10_5 = round(((total_correct[2]/total_examples)*100), 2)
-        return avg_mrr,R10_1,R10_2,R10_5,p_1,map
-
     if args.dataset == "ubuntu" or mode=='test':
         R10_1 = round(((total_correct[0]/total_examples)*100), 2)
         R10_2 = round(((total_correct[1]/total_examples)*100), 2)
