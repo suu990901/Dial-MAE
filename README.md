@@ -19,10 +19,23 @@ Please refer to examples below for reproducing our works.
 ## Citation
 If you find our work useful, please consider to cite our paper.
 ```
-@article{su2023contextual,
-  title={ConTextual Masked Auto-Encoder for Retrieval-based Dialogue Systems},
-  author={Su, Zhenpeng and Wu, Xing and Zhou, Wei and Ma, Guangyuan and others},
-  journal={arXiv preprint arXiv:2306.04357},
-  year={2023}
+@inproceedings{su-etal-2024-dial,
+    title = "Dial-{MAE}: {C}on{T}extual Masked Auto-Encoder for Retrieval-based Dialogue Systems",
+    author = "Su, Zhenpeng  and
+      W, Xing  and
+      Zhou, Wei  and
+      Ma, Guangyuan  and
+      Hu, Songlin",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.47",
+    pages = "820--830",
+    abstract = "Dialogue response selection aims to select an appropriate response from several candidates based on a given user and system utterance history. Most existing works primarily focus on post-training and fine-tuning tailored for cross-encoders. However, there are no post-training methods tailored for dense encoders in dialogue response selection. We argue that when the current language model, based on dense dialogue systems (such as BERT), is employed as a dense encoder, it separately encodes dialogue context and response, leading to a struggle to achieve the alignment of both representations. Thus, we propose Dial-MAE (Dialogue Contextual Masking Auto-Encoder), a straightforward yet effective post-training technique tailored for dense encoders in dialogue response selection. Dial-MAE uses an asymmetric encoder-decoder architecture to compress the dialogue semantics into dense vectors, which achieves better alignment between the features of the dialogue context and response. Our experiments have demonstrated that Dial-MAE is highly effective, achieving state-of-the-art performance on two commonly evaluated benchmarks.",
 }
 ```
