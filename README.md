@@ -1,5 +1,5 @@
 # Dial-MAE
-Dial-MAE is a transformers based Masked Auto-Encoder post-training architecture designed for Retrieval-based Dialogue Systems. Details can be found in [Dial-MAE:ConTextual Masked Auto-Encoder for Retrieval-based Dialogue Systems](https://arxiv.org/abs/2306.04357)(NAACL 2024)
+Dial-MAE is a transformers based Masked Auto-Encoder post-training architecture designed for Retrieval-based Dialogue Systems. Details can be found in [Dial-MAE:ConTextual Masked Auto-Encoder for Retrieval-based Dialogue Systems](https://aclanthology.org/2024.naacl-long.47.pdf)(NAACL 2024)
 
 ## Dependencies
 
